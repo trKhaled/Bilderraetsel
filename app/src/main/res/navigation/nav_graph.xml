@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/loginFragment">
+
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="de.thm.ap.bilderraetsel.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" >
+                <action
+                    android:id="@+id/action_loginFragment_to_moduleListFragment"
+                    app:destination="@id/nav_logged_in" />
+        </fragment>
+        <navigation android:id="@+id/nav_logged_in"
+            app:startDestination="@id/moduleFragment">
+                <fragment
+                    android:id="@+id/statsFragment"
+                    android:name="de.thm.ap.bilderraetsel.AllStatsFragment"
+                    android:label="fragment_stats"
+                    tools:layout="@layout/fragment_all_stats" />
+                <fragment
+                    android:id="@+id/moduleFragment"
+                    android:name="de.thm.ap.bilderraetsel.ModuleFragment"
+                    android:label="fragment_module_list"
+                    tools:layout="@layout/fragment_module" >
+                        <action
+                            android:id="@+id/action_moduleListFragment_to_detailFragment"
+                            app:destination="@id/detailFragment" />
+                        <action
+                            android:id="@+id/action_moduleFragment_to_moduleFormFragment"
+                            app:destination="@id/moduleFormFragment"
+                            app:enterAnim="@anim/fragment_close_enter"
+                            app:exitAnim="@anim/fragment_close_exit" />
+                        <action
+                            android:id="@+id/action_moduleFragment_to_moduleFormFragment2"
+                            app:destination="@id/moduleFormFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/profileFragment"
+                    android:name="de.thm.ap.bilderraetsel.ProfileFragment"
+                    android:label="fragment_profile"
+                    tools:layout="@layout/fragment_profile" >
+                <action
+                    android:id="@+id/action_profileFragment_to_loginFragment"
+                    app:destination="@id/loginFragment" />
+                        <action
+                            android:id="@+id/action_profileFragment_to_achievementsFragment"
+                            app:destination="@id/achievementsFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/detailFragment"
+                    android:name="de.thm.ap.bilderraetsel.DetailsFragment"
+                    android:label="fragment_details"
+                    tools:layout="@layout/fragment_details" >
+                        <action
+                            android:id="@+id/action_detailFragment_to_questionFragment"
+                            app:destination="@id/questionFragment" />
+                        <argument
+                            android:name="position"
+                            app:argType="integer"
+                            android:defaultValue="0" />
+                        <action
+                            android:id="@+id/action_detailFragment_to_questionListFragment"
+                            app:destination="@id/questionListFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/questionFragment"
+                    android:name="de.thm.ap.bilderraetsel.QuestionFragment"
+                    android:label="fragment_question"
+                    tools:layout="@layout/fragment_question" >
+                        <argument
+                            android:name="questionId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                        <action
+                            android:id="@+id/action_questionFragment_to_roundStatsFragment"
+                            app:destination="@id/roundStatsFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/roundStatsFragment"
+                    android:name="de.thm.ap.bilderraetsel.RoundStatsFragment"
+                    android:label="fragment_round_stats"
+                    tools:layout="@layout/fragment_round_stats" >
+                        <argument
+                            android:name="questionId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                        <action
+                            android:id="@+id/action_roundStatsFragment_to_moduleFragment"
+                            app:destination="@id/moduleFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/questionListFragment"
+                    android:name="de.thm.ap.bilderraetsel.QuestionListFragment"
+                    android:label="fragment_question_list"
+                    tools:layout="@layout/fragment_question_list" >
+                        <argument
+                            android:name="questionListId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                        <action
+                            android:id="@+id/action_questionListFragment_to_questionDetailFragment"
+                            app:destination="@id/questionDetailFragment" />
+                        <action
+                            android:id="@+id/action_questionListFragment_to_QuestionFormFragment"
+                            app:destination="@id/QuestionFormFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/questionDetailFragment"
+                    android:name="de.thm.ap.bilderraetsel.QuestionDetailFragment"
+                    android:label="fragment_question_detail">
+                        <argument
+                            android:name="questionId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                        <argument
+                            android:name="collectionId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                        <action
+                            android:id="@+id/action_questionDetailFragment_to_QuestionFormFragment"
+                            app:destination="@id/QuestionFormFragment" />
+                </fragment>
+                <fragment
+                    android:id="@+id/moduleFormFragment"
+                    android:name="de.thm.ap.bilderraetsel.ModuleFormFragment"
+                    android:label="ModuleFormFragment" >
+                        <argument
+                            android:name="position"
+                            app:argType="integer"
+                            android:defaultValue="0" />
+                </fragment>
+                <fragment
+                    android:id="@+id/QuestionFormFragment"
+                    android:name="de.thm.ap.bilderraetsel.QuestionFormFragment"
+                    android:label="QuestionFormFragment" >
+                        <argument android:name="collectionId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                        <argument android:name="questionId"
+                            app:argType="string"
+                            android:defaultValue="null" />
+                </fragment>
+                <fragment
+                    android:id="@+id/achievementsFragment"
+                    android:name="de.thm.ap.bilderraetsel.AchievementsFragment"
+                    android:label="fragment_achievements"
+                    tools:layout="@layout/fragment_achievements" />
+</navigation>
+</navigation>

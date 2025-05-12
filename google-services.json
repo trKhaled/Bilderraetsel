@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "384265047816",
+    "project_id": "bilderraetsel-26e3a",
+    "storage_bucket": "bilderraetsel-26e3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384265047816:android:60ade0a30a39b3d412e6bd",
+        "android_client_info": {
+          "package_name": "de.thm.ap.bilderraetsel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384265047816-6i102buq8nddqclkjpaboaa9jg0cgdc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.thm.ap.bilderraetsel",
+            "certificate_hash": "59119a71a631ac3a2faa3b8bc96cd2da5449331c"
+          }
+        },
+        {
+          "client_id": "384265047816-u177ak68u1icifg3og0q1spfdtp70vsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzM3tj3y-jzoLSDp5FPWMEJkY0iH7EkE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384265047816-u177ak68u1icifg3og0q1spfdtp70vsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

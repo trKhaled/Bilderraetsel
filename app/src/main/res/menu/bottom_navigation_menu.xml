@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/moduleFragment"
+        android:title="Modules"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_48"/>
+
+    <item android:id="@+id/statsFragment"
+        android:title="Stats"
+        android:icon="@drawable/ic_baseline_analytics_48"/>
+
+    <item android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_48"/>
+
+</menu>

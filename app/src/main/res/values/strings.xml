@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bilderraetsel</string>
+
+    <string name="title_value">Bilderrätsel</string>
+    <string name="sign_in_value">Sign in Button</string>
+    <string name="sign_out_value">Sign out Button</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="email_address">E-mail :</string>
+    <string name="modul_erstellen">Create Module</string>
+    <string name="bild_auswaehlen">Choose Photo</string>
+    <string name="beschreibung">Description</string>
+    <string name="level">Level</string>
+    <string name="quiz_title">Quiz Title</string>
+    <string name="quiz_description">Quiz Description</string>
+    <string name="schwierigkeit">Difficulty</string>
+    <string name="view_quiz">View Quiz</string>
+    <string name="change_quiz">Change Quiz</string>
+    <string name="bilderr_tsel">Bilderrätsel</string>
+    <string name="speichern">Save</string>
+</resources>
