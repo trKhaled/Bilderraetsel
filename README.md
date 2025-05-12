@@ -1,8 +1,6 @@
 # Bilderrätsel
 
-<div align="center">
-![Logo](docs/logo.png)
-</div>
+![logo](https://github.com/user-attachments/assets/034d6aa5-2548-4bff-9dd8-83b610e009bc)
 
 An Android picture puzzle app written in Kotlin, containing a set of questions to answer and different themes to choose from.
 Statistics will be stored and achievements can be unlocked, creation of new themes or modifications to it are also possible.
