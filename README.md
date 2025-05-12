@@ -1,7 +1,7 @@
 # Bilderrätsel
 
 <div align="center">
-![img](app/src/main/res/drawable/logo.png)
+![Logo](docs/logo.png)
 </div>
 
 An Android picture puzzle app written in Kotlin, containing a set of questions to answer and different themes to choose from.
